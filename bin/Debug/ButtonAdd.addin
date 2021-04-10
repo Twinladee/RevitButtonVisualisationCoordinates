@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>CoordinateCalculation</Name>
+    <Assembly>RevitAddinButton.dll</Assembly>
+    <AddInId>604b1052-f742-4951-8576-c261d1993108</AddInId>
+    <FullClassName>RevitAddinButton.App</FullClassName>
+    <VendorId>EgorK/SergeyM</VendorId>
+    <VendorD>vk.com https://vk.com/plade</VendorD>
+  </AddIn>
+
+  <!--This copies the publish directory to the resource folder which is named "Revit"-->
+  <ItemGroup>
+    <AllOutputFiles Include="$(OutputPath)\bin\Debug\*.*" />
+  </ItemGroup>
+
+  <Target Name="CopyFiles">
+    <PropertyGroup>
+      <CopiedFiles>$(OutputPath)\bin\Debug\*.*</CopiedFiles>
+
+      <TargetLocation Condition=" '$(Configuration)' == 'Release' ">C:\Users\egor2\AppData\Roaming\Autodesk\Revit\Addins\2020</TargetLocation>
+    </PropertyGroup>
+    <Copy Condition=" '$(TargetLocation)' != '' " SourceFiles="@(AllOutputFiles)" DestinationFolder="$(TargetLocation)" SkipUnchangedFiles="false" />
+  </Target>
+</RevitAddIns>
+

@@ -1,0 +1,11 @@
+D:\OOP ProjectRevitApi\RevitAddinButton\obj\Debug\RevitAddinButton.csproj.CoreCompileInputs.cache
+D:\OOP ProjectRevitApi\RevitAddinButton\bin\Debug\RevitAddinButton.dll
+D:\OOP ProjectRevitApi\RevitAddinButton\bin\Debug\RevitAddinButton.pdb
+D:\OOP ProjectRevitApi\RevitAddinButton\obj\Debug\RevitAddinButton.dll
+D:\OOP ProjectRevitApi\RevitAddinButton\obj\Debug\RevitAddinButton.pdb
+D:\OOP ProjectRevitApi\RevitAddinButton\bin\Debug\ButtonAdd.addin
+C:\Users\egor2\AppData\Roaming\Autodesk\Revit\Addins\2020\ButtonAdd.addin
+C:\Users\egor2\AppData\Roaming\Autodesk\Revit\Addins\2020\RevitAddinButton.dll
+C:\Users\egor2\AppData\Roaming\Autodesk\Revit\Addins\2020\RevitAddinButton.pdb
+D:\OOP ProjectRevitApi\RevitAddinButton\obj\Debug\RevitAddinButton.csprojAssemblyReference.cache
+D:\OOP ProjectRevitApi\RevitAddinButton\obj\Debug\RevitAddinButton.g.resources

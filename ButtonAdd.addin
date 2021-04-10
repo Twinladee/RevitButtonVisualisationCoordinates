@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Расчет координат</Name>
+    <Assembly>RevitAddinButton.dll</Assembly>
+    <AddInId>604b1052-f742-4951-8576-c261d1993108</AddInId>
+    <FullClassName>RevitAddinButton.App</FullClassName>
+    <VendorId>EgorK/SergeyM</VendorId>
+    <VendorD>vk.com https://vk.com/plade</VendorD>
+    <VendorD>vk.com https://vk.com/stealthyboy</VendorD>
+    
+  </AddIn>
+</RevitAddIns>
+

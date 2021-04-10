@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Coordinate Calculation</Text>
+    <Description>Отображение координат любого элемента</Description>
+    <Assembly>RevitAddinButton.dll</Assembly>
+    <FullClassName>RevitAddinButton.Command</FullClassName>
+    <ClientId>481545f8-f72d-4ae9-89b5-56f498885f42</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RevitAddinButton</Name>
+    <Assembly>RevitAddinButton.dll</Assembly>
+    <FullClassName>RevitAddinButton.App</FullClassName>
+    <ClientId>d7da7c8b-a25a-430c-9be1-a90e1895a86c</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

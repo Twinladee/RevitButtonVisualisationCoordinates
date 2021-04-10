@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>CoordinateCalculation</Name>
+    <Assembly>RevitAddinButton.dll</Assembly>
+    <AddInId>604b1052-f742-4951-8576-c261d1993108</AddInId>
+    <FullClassName>RevitAddinButton.App</FullClassName>
+    <VendorId>EgorK/SergeyM</VendorId>
+    <VendorD>vk.com https://vk.com/plade</VendorD>
+  </AddIn>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <OutputPath>D:\OOP ProjectRevitApi\RevitAddinButton</OutputPath>
+  </PropertyGroup>
+
+  <!--This copies the publish directory to the resource folder which is named "Revit"-->
+  <ItemGroup>
+    <AllOutputFiles Include="$(OutputPath)\publish\*.*" />
+  </ItemGroup>
+
+  <Target Name="CopyFiles" AfterTargets="publish">
+    <PropertyGroup>
+      <CopiedFiles>$(OutputPath)\publish\*.*</CopiedFiles>
+
+      <TargetLocation Condition=" '$(Configuration)' == 'Release' ">C:\Users\egor2\AppData\Roaming\Autodesk\Revit\Addins\2020</TargetLocation>
+    </PropertyGroup>
+    <Copy Condition=" '$(TargetLocation)' != '' " SourceFiles="@(AllOutputFiles)" DestinationFolder="$(TargetLocation)" SkipUnchangedFiles="false" />
+  </Target>
+</RevitAddIns>
+
